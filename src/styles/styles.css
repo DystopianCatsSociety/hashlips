@@ -1,16 +1,16 @@
 :root {
-  --button-bg: #8522c7;
-  --button-active-bg: #681d9b;
-  --small-button-bg: #919191;
+  --button-bg: #ff6dd3;
+  --button-active-bg: #bfff76;
+  --small-button-bg: #ff6565;
   --small-button-active-bg: #646464;
   --button-text: #ffffff;
   --card: #ffffff;
   --accountText: #ffffff;
   --statusText: #470068;
-  --bg-gradient_1: rgb(162, 196, 240);
-  --bg-gradient_2: rgb(240, 162, 217);
-  --gradient_1: rgb(83, 152, 243);
-  --gradient_2: rgb(236, 71, 214);
+  --bg-gradient_1: rgb(255, 255, 255);
+  --bg-gradient_2: rgb(255, 255, 255);
+  --gradient_1: rgb(113, 255, 156);
+  --gradient_2: rgb(252, 128, 235);
   --gradient_3: rgb(241, 204, 80);
   --success: #24a13f;
   --warning: #ca5824;
@@ -192,4 +192,5 @@ button:disabled {
   to {
     transform: rotate(360deg);
   }
+
 }
