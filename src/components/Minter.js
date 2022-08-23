@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Web3 from "web3";
 import contract from "../contracts/contract.json";
-import Hero from "../assets/hero.png";
+import Hero from "../assets/hero.gif";
 
 const initialInfoState = {
   connected: false,
@@ -295,7 +295,7 @@ function Minter() {
           }}
           className="_90"
           target="_blank"
-          href="https://polygonscan.com/address/0xC4b5F4438645Ebb369f0ff86bF041c2947406f89"
+          href="https://polygonscan.com/token/0xC4b5F4438645Ebb369f0ff86bF041c2947406f89"
         >
           View Contract
         </a>
