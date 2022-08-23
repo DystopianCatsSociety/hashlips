@@ -1,18 +1,18 @@
 :root {
-  --button-bg: #ff6dd3;
-  --button-active-bg: #bfff76;
-  --small-button-bg: #ff6565;
+  --button-bg: #ff7b00;
+  --button-active-bg: #ffae43;
+  --small-button-bg: #000000;
   --small-button-active-bg: #646464;
   --button-text: #ffffff;
-  --card: #ffffff;
+  --card: #a1ec8b;
   --accountText: #ffffff;
-  --statusText: #470068;
+  --statusText: #000000;
   --bg-gradient_1: rgb(255, 255, 255);
   --bg-gradient_2: rgb(255, 255, 255);
-  --gradient_1: rgb(113, 255, 156);
-  --gradient_2: rgb(252, 128, 235);
-  --gradient_3: rgb(241, 204, 80);
-  --success: #24a13f;
+  --gradient_1: rgb(168, 255, 96);
+  --gradient_2: rgb(143, 255, 121);
+  --gradient_3: rgb(145, 250, 114);
+  --success: #118f2c;
   --warning: #ca5824;
   --error: #ca2f24;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .page {
-  min-height: 100vh;
+  min-height: 00vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@ body {
   background-color: var(--card);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 18px 0 rgb(255, 9, 9);
   border-radius: 15px;
   width: 300px;
   transition: 0.3s;
@@ -65,11 +65,11 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 18px 0 rgb(38, 0, 255);
 }
 
 .card_header {
-  height: 250px;
+  height: 252px;
   width: 300px;
   display: flex;
   justify-content: center;
@@ -86,7 +86,7 @@ body {
 }
 
 .card_body {
-  padding: 15px;
+  padding: 10px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -141,7 +141,7 @@ body {
 
 .button {
   display: inline-block;
-  padding: 7px 14px;
+  padding: 10px 20px;
   font-size: 14px;
   cursor: pointer;
   text-align: center;
@@ -150,8 +150,8 @@ body {
   color: var(--button-text);
   background-color: var(--button-bg);
   border: none;
-  border-radius: 15px;
-  margin-bottom: 2px;
+  border-radius: 5px;
+  margin-bottom: 1px;
 }
 
 button:disabled {
@@ -164,7 +164,7 @@ button:disabled {
 
 .small_button {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 20px;
   font-size: 10px;
   cursor: pointer;
   text-align: center;
@@ -173,8 +173,8 @@ button:disabled {
   color: var(--button-text);
   background-color: var(--small-button-bg);
   border: none;
-  border-radius: 15px;
-  margin-bottom: 2px;
+  border-radius: 5px;
+  margin-bottom: 1px;
 }
 
 .small_button:disabled {
@@ -192,5 +192,208 @@ button:disabled {
   to {
     transform: rotate(360deg);
   }
-
 }
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.scroll{
+    height: 60vh;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-marquee {
+  position: relative;
+  display:flex; 
+  align-items:center;
+  overflow-x: hidden;
+}
+
+.text-single {
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+    margin: 0;
+  will-change: transform;
+}
+
+.text {
+  padding: 0;
+  font-size: 6.4rem;
+  display: inline-block;
+  margin-right: 2rem;
+  font-family: arial;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+
+/*********************************/
+/********** 2 columns ************/
+
+@media (min-width: 850px){
+  .c-md-2 {
+    width: 43%;
+    margin: 3%;
+    display: inline-block;
+    float: left;
+  }
+}
+@media (min-width: 600px) and (max-width: 850px){
+  .c-md-2 {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+/********** 2 columns ************/
+/*********************************/
+/*********************************/
+/********** timeline *************/
+.timeline {
+  max-width: 1170px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.tl-header h1 {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 35px;
+}
+.tl-header div {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.tl-item {
+  margin: 0px 0 0px 70px;
+  position: relative;
+}
+.tl-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #6458a2;
+  margin: 11px 0;
+}
+.tl-year-back {
+  background: #6458a2;
+  width: 34px;
+  height: 100px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  display: block;
+}
+.tl-year-wrap {
+  margin-top: 5px;
+}
+.tl-year {
+  position: absolute;
+  top: 22px;
+  left: -8px;
+  transform: rotate(270deg);
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+}
+.tl-event {
+  position: relative;
+  padding-bottom: 50px;
+  margin-top: -1px; /* IE EDGE bug */
+}
+.tl-event:before {
+  content: "";
+  position: absolute;
+  background: #6458a2;
+  width: 34px;
+  height: 100%;
+  display: block;
+}
+.tl-event h2 {
+  margin: 0;
+  padding: 15px 15px 10px 45px;
+}
+.tl-color {
+  color: #6458a2;  
+}
+.tl-date {
+  position: absolute;
+  top: 17px;
+  padding-right: 15px;
+  z-index: 1000;
+  color: #65bfda;
+  font-weight: bold;
+  font-size: 20px;
+  -ms-transform:translateX(-100%); 
+  -webkit-transform:translateX(-100);   
+  transform:translateX(-100%);
+}
+.tl-date:after {
+  position: absolute;
+  right: -22px;
+  top: 7px;
+  content: "";
+  background: #fbda1d;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+}
+.tl-end {
+  background: #6458a2;
+  width: 34px;
+  height: 50px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: -1px; /* IE EDGE bug */
+}
+/********** timeline *************/
+/*********************************/
+
+
+
